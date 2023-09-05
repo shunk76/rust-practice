@@ -17,5 +17,6 @@ fn main() {
     println!("出目の回数: {:?}", counts);
     counts
         .iter()
-        .for_each(|&x| println!("{}", x as f64 / f_end));
+        .enumerate()
+        .for_each(|(i, &x)| println!("{}の確率: {}", i + 1, x as f64 / f_end));
 }
