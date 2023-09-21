@@ -1,4 +1,4 @@
 {
   "rust-analyzer.showUnlinkedFileNotification": false,
-  "cSpell.words": ["sjis"]
+  "cSpell.words": ["powf", "sjis"]
 }
