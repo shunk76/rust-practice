@@ -26,16 +26,17 @@ impl Person {
     }
 }
 
+fn print_person(result: Result<Person, String>) {
+    match result {
+        Ok(person) => println!("{}: {}歳", person.name, person.age),
+        Err(err) => println!("{}", err),
+    }
+}
+
 fn main() {
     let alice = Person::new("Alice", 17);
-    match alice {
-        Ok(alice) => println!("{}: {}歳", alice.name, alice.age),
-        Err(err) => println!("{}", err),
-    }
+    print_person(alice);
 
     let bob = Person::new("Bob", 30);
-    match bob {
-        Ok(bob) => println!("{} {}", bob.name, bob.age),
-        Err(err) => println!("{}", err),
-    }
+    print_person(bob);
 }
