@@ -12,5 +12,5 @@ fn main() {
         println!("{}", a);
     }
 
-    println!("len = {}", array.len()); // エラー
+    println!("len = {}", array.len());
 }
