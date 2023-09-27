@@ -1,3 +1,11 @@
+// Rustのenumとmatch文を用いて、単純な四則演算の計算機を作成してください。
+// enumを使ってOperationという名前で、足し算（Add）、引き算（Subtract）、
+// 掛け算（Multiply）、割り算（Divide）の4つの操作を定義してください。
+// また、関数calculateを作成し、この関数はOperation enumと2つのf64数字を引数に取ります。
+// この関数は、指定された演算を行い、結果をResult<f64, String>で返してください。
+// 割り算の際に、0で割ることがある場合は、Errでエラーメッセージを返してください。
+// メイン関数で、いくつかのテストケースを用いてこのcalculate関数を試してください。
+
 enum Operation {
     Add,
     Subtract,
